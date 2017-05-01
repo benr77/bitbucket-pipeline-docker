@@ -22,7 +22,8 @@ RUN apt-get update && apt-get install -y \
         php-mbstring \
         php-mysql \
         php-sqlite3 \
-        php-tidy
+        php-tidy \
+        php-zip
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
