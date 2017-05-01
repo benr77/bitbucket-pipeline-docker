@@ -3,7 +3,7 @@ MAINTAINER Ben Roberts <ben@headsnet.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt update && apt -y dist-upgrade && apt install -y curl locales
+RUN apt update && apt -y dist-upgrade && apt install -y curl git locales
 
 RUN locale-gen en_GB.UTF-8
 ENV LANG       en_GB.UTF-8
